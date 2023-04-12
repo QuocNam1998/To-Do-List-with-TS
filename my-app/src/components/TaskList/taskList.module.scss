@@ -1,0 +1,32 @@
+.title {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.taskList {
+
+
+    // nếu như không phải phần tử cuối thì margin-bottom = 1rem
+    .task {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .taskName {
+            margin-left: 1rem;
+            flex-grow: 1;
+
+            &.isDone {
+                color: gray;
+                opacity: 0.8;
+                text-decoration: line-through;
+            }
+        }
+
+        .taskBtn {
+            margin-right: .5rem;
+        }
+    }
+}
